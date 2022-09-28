@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet">
+
+    <title>Form</title>
+
+    <style>
+        .header{
+            background-color: #2b9348;
+            height: 150px;
+            width: 100%;
+            font-size: 50px;
+            text-shadow: 15px 5px 15px black;
+            text-align: center;
+            color: whitesmoke;
+            font-family: 'Abril Fatface', cursive;
+        }
+        body{
+            margin: 0px;
+            background-color: #ff4d6d;
+            font-family: 'Yantramanav', sans-serif;
+            
+            
+        }
+        #fm{
+            width:1200px;
+            height:1000px;
+            text-align: justify;
+            font-size: 18px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .lg{
+            color: whitesmoke;
+            font-size: 25px;
+        }
+        #name{
+            color: whitesmoke;
+            font-size: 25px;
+        }
+        .lgt{
+            color: whitesmoke;
+            font-size: 30px;
+        }
+        .menu {
+        display:flex;
+        background-color: #278442;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0px;
+        }
+        .item {
+        background-color: #278442;
+        text-align: center;
+        font-size: 28px;
+        color:whitesmoke;
+        margin-left: 40px;
+        font-family: 'Yantramanav', sans-serif;
+        }
+        #fs{
+            border-radius: 20px;
+        }
+        #footer{
+            height: 250px;
+            background-color: #2b9348;
+            width: 100%
+        }
+        #menu1{
+        display:flex;
+        background-color: #278442;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+        #item1{
+        background-color: #278442;
+        text-align: center;
+        font-size: 20px;
+        color:whitesmoke;
+        margin-left: 0px;
+        font-family: 'Yantramanav', sans-serif;
+        margin-top: 0px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header class = "header">
+        Radish Delivery Service
+    </header>
+
+    <nav class="menu">
+
+        <div class="item"><target="_blank">About</a></div>
+        <div class="item"><target="_blank">Contact</a></div>
+        <div class="item"><target="_blank">Services</a></div>
+
+    </nav>
+
+    <form id = "fm">
+        <fieldset id ="fs">
+            <legend class ="lgt">Place your Order!</legend>
+            <br>
+        <fieldset id = "fs">
+            <legend class = "lg">Name for the Order.</legend>
+            <label for = "fname" id = "name">First Name</label>
+            <input type = "text" id ="fname" placeholder = "First Name" pattern = "^[a-zA-Z]*[^0-9]" required>
+            <br>
+            <label for = "fname" id = "name">Last Name</label>
+            <input type = "text" id ="fname" placeholder = "Last Name" pattern = "^[a-zA-Z]*[^0-9]" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset id = "fs">
+            <legend class = "lg"> Type of Radish.</legend>
+            <label for = "wr" id = "name">Watermelon Radish</label>
+            <input type = "radio" id = "wr" name = "radish" value = "Watermelon Radish" required>
+            <br>
+            <label for = "wr" id = "name">French Breakfast Radish</label>
+            <input type = "radio" id = "wr" name = "radish" value = "French Breakfast Radish" required>
+            <br>
+            <label for = "wr" id = "name">Daikon White Radish</label>
+            <input type = "radio" id = "wr" name = "radish" value = "Daikon White Radish" required>
+            </fieldset>
+            <br>
+            <fieldset id = "fs">
+            <legend class = "lg">How Many Radish's</legend>
+            <label for="rad" id = "name">Radish's (between 0 and 50):</label>
+            <input type="range" id="rad" name="radish" min="0" max="20">
+            </fieldset>
+            <br>
+            <fieldset id = "fs">
+            <legend class = "lg">Address and Email</legend>
+            <label for = "ad" id = "name">Address</label>
+            <input type = "text" id = "ad" name = "addr" placeholder = "Address1" pattern = "^[0-9]+\s[a-zA-Z]+\s[a-zA-Z0-9]+\s[a-zA-Z]+" required>
+            <br>
+            <label for = "ad" id = "name">City</label>
+            <input type = "text" id = "ad" name = "city" placeholder = "City" pattern = "^[a-zA-Z]*[^0-9]" required>
+            <br>
+            <label for = "zip" id = "name">Zipcode</label>
+            <input type = "text" id = "zip" name = "zCoder" placeholder = "Zipcode" pattern = "^[0-9]{5}" required>
+            <br>
+            <label for = "st" id = "name">State</label>
+            <input type = "text" id = "st" name = "state" placeholder = "State" pattern = "^[a-zA-Z]*[^0-9]" required>
+            <br>
+            <label for = "em" id = "name">Email</label>
+            <input type = "email" id = "em" name = "email" placeholder = "Email" pattern= "^[a-zA-Z0-9]+.[a-zA-Z]+.[a-zA-Z]+" required>
+            <br>
+            <label for = "em" id = "name">Phone</label>
+            <input type = "number" id = "em" name = "phone" placeholder = "Phone" pattern = "^[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </fieldset>
+            <br>
+            <fieldset id = "fs">
+            <legend class = "lg">Payment Information</legend>
+            <label id = "name">Credit/Debit card Infromation</label>
+            <br>
+            <i for = "cr" class="fa fa-credit-card" style="font-size:24px"></i>
+            <input type = "radio" id = "cr" name = "Credit" value = "Credit Card" required>
+            <i for = "dc" class="fa fa-cc-amex" style="font-size:24px"></i>
+            <input type = "radio" id = "dr" name = "Credit" value = "Debit Card" required>
+            <i for = "dis" class="fa fa-cc-discover" style="font-size:24px"></i>
+            <input type = "radio" id = "dis" name = "Credit" value = "Discovery Card" required>
+            <br>
+            <label for = "cm" id = "name">Credit Number</label>
+            <input type = "number" id = "cm" name = "credit" value = "Credit Card" pattern = "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+            <br>
+            <label for="ed" id = "name">Exp Date</label>
+            <input type = "date" id = "ed" name = "expdat" value = "Exp Date" required>
+            <br>
+            <label for = "cv" id = "name">Cvc Code</label>
+            <input type = "number" id = "cv" name = "cvc" value = "Cvc Code" pattern = "^[0-9]{3}" required>
+            </fieldset>
+            <button type = "submit">Submit</button>
+        </fieldset>
+        <br><br>
+    </form>
+    <br><br>
+    <footer id  ="footer">
+        <nav id = "menu1"></nav>
+        <div id = "item1">Check us out!</div>
+        <div id = "item1">
+        <i class="fa fa-facebook-square" style="font-size:24px;color:whitesmoke;"></i>
+        <i class="fa fa-instagram" style="font-size:24px;color:whitesmoke;"></i>
+        <i class="fa fa-reddit-alien" style="font-size:24px;color:whitesmoke;"></i>
+        </div>
+        <div id = "item1">
+            All Rights &copy Reserved
+        </div>
+        <div id = "item1">2022</div>
+
+    </footer>
+</body>
+</html>
